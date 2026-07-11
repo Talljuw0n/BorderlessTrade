@@ -35,7 +35,7 @@ export default function ArticleECOWAS() {
         constrain intra-regional trade despite the region's economic potential.
       </p>
       <blockquote>
-        The private sector is increasingly recognized as a central driver of trade and economic expansion — and
+        The private sector is increasingly recognized as a central driver of trade and economic expansion, and
         stronger alignment between legislative frameworks and business realities is needed to unlock regional
         markets.
       </blockquote>

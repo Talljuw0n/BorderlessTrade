@@ -25,7 +25,7 @@ const pillars = [
   {
     n: '03',
     title: 'Financial Planning & Sustainability',
-    body: 'Practical financial management — pricing, budgeting, forecasting and investment readiness.',
+    body: 'Practical financial management: pricing, budgeting, forecasting and investment readiness.',
   },
   {
     n: '04',
@@ -42,26 +42,26 @@ const pillars = [
 const cohorts = [
   {
     year: '2022',
-    title: 'AWE Cohort — 2022',
-    body: 'A more concentrated cohort focused on deeper capacity building and targeted mentorship — strategic growth, operational excellence and international market readiness for women ready to scale.',
+    title: 'AWE Cohort 2022',
+    body: 'A more concentrated cohort focused on deeper capacity building and targeted mentorship, strategic growth, operational excellence and international market readiness for women ready to scale.',
     tag: 'Programs · Training & Education',
   },
   {
     year: '2021',
-    title: 'AWE Cohort — 2021',
+    title: 'AWE Cohort 2021',
     body: 'Continued the multi-year AWE implementation, deepening the network of women entrepreneurs across the region.',
     tag: 'Programs · Training & Education',
   },
   {
     year: '2020',
-    title: 'AWE Cohort — 2020',
+    title: 'AWE Cohort 2020',
     body: 'Sustained delivery of the accelerator through a period of disruption, keeping women founders connected and progressing.',
     tag: 'Programs · Training & Education',
   },
   {
     year: '2019',
-    title: 'AWE Cohort — 2019',
-    body: 'One of the largest in-person implementations — 750 women entrepreneurs over a seven-day intensive accelerator of workshops, expert sessions and collaborative learning.',
+    title: 'AWE Cohort 2019',
+    body: 'One of the largest in-person implementations: 750 women entrepreneurs over a seven-day intensive accelerator of workshops, expert sessions and collaborative learning.',
     tag: 'Programs · Training & Education',
   },
   {
@@ -73,7 +73,7 @@ const cohorts = [
   {
     year: '2018',
     title: 'Borderless Trade Salon Series 1.0',
-    body: 'The inaugural Women in Business Breakfast Salon — a high-level convening of entrepreneurs, investors and policy stakeholders to build cross-border partnerships and leadership capacity.',
+    body: 'The inaugural Women in Business Breakfast Salon, a high-level convening of entrepreneurs, investors and policy stakeholders to build cross-border partnerships and leadership capacity.',
     tag: 'Training & Education · May 2018',
   },
 ];
@@ -126,7 +126,7 @@ export default function WomenInTrade() {
             Women in Trade
           </h1>
           <p style={sx('font-size:19px; line-height:1.6; color:#E4E1EC; max-width:620px; margin-top:24px;')}>
-            Where our story began — advancing women's participation in trade and investment across Africa and its
+            Where our story began: advancing women's participation in trade and investment across Africa and its
             diaspora.
           </p>
         </div>
@@ -162,7 +162,7 @@ export default function WomenInTrade() {
         <div style={sx('color:#4C4658; font-size:18px;')}>
           <p style={sx('margin-bottom:22px;')}>
             Borderless Trade &amp; Investments served as an implementation partner for the{' '}
-            <strong style={sx('color:#0F0326;')}>Academy for Women Entrepreneurs (AWE)</strong> — a global initiative
+            <strong style={sx('color:#0F0326;')}>Academy for Women Entrepreneurs (AWE)</strong>, a global initiative
             of the U.S. Department of State designed to empower women entrepreneurs through practical business
             training, mentorship and global networks.
           </p>
@@ -172,7 +172,7 @@ export default function WomenInTrade() {
             to compete and collaborate across Africa.
           </p>
           <p>
-            As African economies move toward deeper integration through the AfCFTA, that mission has only grown —
+            As African economies move toward deeper integration through the AfCFTA, that mission has only grown:
             from convening and training to structuring the trade pathways that let women-led businesses scale.
           </p>
         </div>
@@ -271,7 +271,7 @@ export default function WomenInTrade() {
               Partner with the Women in Trade program.
             </h2>
             <p style={sx('font-size:18px; color:#E4E1EC; margin-bottom:30px; max-width:560px;')}>
-              Whether you're a funder, a buyer, or a woman-led enterprise ready to scale — we'd love to hear from you.
+              Whether you're a funder, a buyer, or a woman-led enterprise ready to scale, we'd love to hear from you.
             </p>
             <Link to="/contact" style={sx('background:#C1B098; color:#0F0326; padding:15px 30px; font-weight:600; font-size:15px;')}>
               Get in touch

@@ -21,7 +21,7 @@ export default function ArticleFinance() {
       </p>
       <p>
         But for the AfCFTA to truly ignite, we must recognize that a payment is not the same as a trade transaction.
-        The real, multi-billion dollar opportunity — and challenge — lies in building the{' '}
+        The real, multi-billion dollar opportunity (and challenge) lies in building the{' '}
         <strong>middle mile: Trade Finance.</strong>
       </p>
       <h3>The Next Frontier: From Payment Rails to Prosperity Highways</h3>
@@ -41,7 +41,7 @@ export default function ArticleFinance() {
         </li>
         <li>
           <strong>The Data Disconnect:</strong> A wealth of transactional data exists within payment platforms, but
-          it remains siloed — data that could unlock credit for millions of trustworthy businesses.
+          it remains siloed: data that could unlock credit for millions of trustworthy businesses.
         </li>
       </ul>
       <p>
@@ -62,7 +62,7 @@ export default function ArticleFinance() {
       </p>
       <p>
         <strong>3. The Data-for-Credit Initiative.</strong> With permission from our SME users, we analyze
-        transactional data to generate a Dynamic Trust Score — a holistic measure of reliability across the entire
+        transactional data to generate a Dynamic Trust Score, a holistic measure of reliability across the entire
         trade value chain that helps partner lenders make faster, more accurate decisions.
       </p>
       <h3>Case in Point: From Payment to Production</h3>

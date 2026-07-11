@@ -12,7 +12,7 @@ const programs = [
     category: 'Trade Facilitation / SME',
   },
   {
-    name: 'ECOWAS @ 25 — Regional Trade Integration Partnership',
+    name: 'ECOWAS @ 25: Regional Trade Integration Partnership',
     partners: 'ECOWAS Parliament, Duchess Natural Limited',
     year: '2026',
     category: 'Policy / Regional Integration',
@@ -37,13 +37,13 @@ const programs = [
   },
   {
     name: 'Borderless Trade Salon Series 2.0',
-    partners: '—',
+    partners: 'TBC',
     year: 'TBC',
     category: 'Training & Education',
   },
   {
     name: 'Borderless Trade Salon Series 1.0',
-    partners: '—',
+    partners: 'TBC',
     year: 'TBC',
     category: 'Training & Education',
   },
@@ -103,8 +103,8 @@ export default function TrackRecord() {
                 <td
                   data-label="Partners"
                   style={sx(
-                    `padding:18px 16px; color:${p.partners === '—' ? '#9A9284' : '#6B6478'};${
-                      p.partners === '—' ? ' font-style:italic;' : ''
+                    `padding:18px 16px; color:${p.partners === 'TBC' ? '#9A9284' : '#6B6478'};${
+                      p.partners === 'TBC' ? ' font-style:italic;' : ''
                     }`
                   )}
                 >
@@ -162,7 +162,7 @@ export default function TrackRecord() {
             A transaction ledger builds credibility fastest.
           </h2>
           <p style={sx('font-size:16px; color:#C9C3D2; max-width:680px; margin-bottom:30px;')}>
-            Even three or four real disclosed deals here — sector, date, amount, role — will do more for investor and
+            Even three or four real disclosed deals here (sector, date, amount, role) will do more for investor and
             DFI confidence than any headline statistic.
           </p>
           <table className="responsive-table" style={sx('width:100%; border-collapse:collapse; font-size:15px;')}>
@@ -186,7 +186,7 @@ export default function TrackRecord() {
             </tbody>
           </table>
           <p style={sx("font-family:'IBM Plex Mono',monospace; font-size:12px; color:#5B5470; margin-top:16px;")}>
-            PLACEHOLDER — replace with disclosed transaction data.
+            PLACEHOLDER: replace with disclosed transaction data.
           </p>
         </div>
       </Section>

@@ -14,7 +14,7 @@ export default function ArticleT2T() {
         We are delighted to announce our partnership with the ECOWAS Parliament, in collaboration with Providus
         Bank, SMEDAN, GABA Marketplace Center, Borderless Trade Network, Duchess N. Limited, and Valcetra, to launch
         the <strong>'West Africa SME Trade Facilitation &amp; Market Access Programme'</strong> through the
-        Training-to-Transactions (T2T) model — a structured initiative designed to support African SMEs in moving
+        Training-to-Transactions (T2T) model, a structured initiative designed to support African SMEs in moving
         from business readiness into real cross-border trade.
       </p>
       <p>
@@ -22,8 +22,8 @@ export default function ArticleT2T() {
         growth, regional integration, and global market access for African businesses.
       </p>
       <p>
-        In cohort 1, 500 growth-oriented MSMEs across priority sectors — including agro-processing, cosmetics,
-        beverages, garments and textiles, and leather — will be selected into a highly competitive pipeline designed
+        In cohort 1, 500 growth-oriented MSMEs across priority sectors (including agro-processing, cosmetics,
+        beverages, garments and textiles, and leather) will be selected into a highly competitive pipeline designed
         not just for export readiness, but for real transactions.
       </p>
       <p>
@@ -40,11 +40,11 @@ export default function ArticleT2T() {
         of the programme, only successful applicants will be contacted.
       </p>
       <blockquote>
-        If your business is ready to trade beyond borders, this is the next step — because training alone does not
+        If your business is ready to trade beyond borders, this is the next step, because training alone does not
         grow economies, transactions do.
       </blockquote>
       <p>
-        Apply at no cost by filling out the application form here —{' '}
+        Apply at no cost by filling out the application form here:{' '}
         <a href="https://www.t2tprogramme.com" target="_blank" rel="noopener noreferrer">
           www.t2tprogramme.com
         </a>

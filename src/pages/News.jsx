@@ -35,7 +35,7 @@ const articles = [
     tag: 'Africa · Trade & Investment',
     date: 'Oct 21, 2025',
     title: 'Finance Without Friction',
-    body: 'From payment rails to trade finance — how BTI de-risks capital for high-value, trust-dependent African trade.',
+    body: 'From payment rails to trade finance: how BTI de-risks capital for high-value, trust-dependent African trade.',
   },
 ];
 

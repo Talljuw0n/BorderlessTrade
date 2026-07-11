@@ -20,7 +20,7 @@ const pillars = [
   {
     n: '01',
     title: 'Trade & Market Access',
-    body: 'We open export markets for African enterprises — market entry, export development and MSME readiness for cross-border scale.',
+    body: 'We open export markets for African enterprises: market entry, export development and MSME readiness for cross-border scale.',
   },
   {
     n: '02',
@@ -30,7 +30,7 @@ const pillars = [
   {
     n: '03',
     title: 'Policy & Partnerships',
-    body: 'We align public and private stakeholders — policy advisory, ecosystem development and strategic facilitation across borders.',
+    body: 'We align public and private stakeholders: policy advisory, ecosystem development and strategic facilitation across borders.',
   },
 ];
 
@@ -63,14 +63,14 @@ const insights = [
     to: '/news/afcfta',
     tag: 'AfCFTA',
     title: 'From Policy to Practice: building the operating system for the AfCFTA',
-    body: 'A single market for 1.4 billion people — turning the vision into working infrastructure.',
+    body: 'A single market for 1.4 billion people: turning the vision into working infrastructure.',
     image: 'https://borderlesstrade.com/wp-content/uploads/2024/03/afCFTA-1410x720.webp',
   },
   {
     to: '/news/finance',
     tag: 'Trade & Investment',
     title: 'Finance Without Friction',
-    body: 'From borders to bridges — how new trade ecosystems empower African entrepreneurs.',
+    body: 'From borders to bridges: how new trade ecosystems empower African entrepreneurs.',
     image: 'https://borderlesstrade.com/wp-content/uploads/2024/03/Finance-without-fiction-1410x720.webp',
   },
 ];
@@ -97,7 +97,7 @@ export default function Home() {
         </div>
         <div
           style={sx(
-            'position:absolute; left:0; right:0; bottom:0; height:280px; pointer-events:none; background:linear-gradient(0deg, rgba(15,3,38,.65) 0%, rgba(15,3,38,0) 100%);'
+            'position:absolute; left:0; right:0; bottom:0; top:100px; pointer-events:none; background:linear-gradient(0deg, rgba(15,3,38,.72) 0%, rgba(15,3,38,.38) 50%, rgba(15,3,38,.16) 100%);'
           )}
         ></div>
         <Header overlay />
@@ -126,7 +126,7 @@ export default function Home() {
                 'font-size:19px; line-height:1.55; color:#E4E1EC; max-width:520px; margin-bottom:30px; text-shadow:0 1px 10px rgba(0,0,0,.5);'
               )}
             >
-              We connect African enterprise, governments and institutions to global value chains — and the capital
+              We connect African enterprise, governments and institutions to global value chains, and the capital
               that scales them.
             </p>
             <div className="hero-btns" style={sx('display:flex; gap:16px;')}>
@@ -163,7 +163,7 @@ export default function Home() {
           ))}
           <div className="mobile-stat-note" style={sx('padding:40px 26px; display:flex; align-items:center;')}>
             <p className="lbl" style={sx('color:#C9C3D2; text-transform:none; letter-spacing:.04em; font-size:12px; line-height:1.5;')}>
-              Illustrative — replace with verified data.
+              Illustrative: replace with verified data.
             </p>
           </div>
         </div>
@@ -181,7 +181,7 @@ export default function Home() {
         </div>
         <div style={sx('color:#4C4658; font-size:18px;')}>
           <p style={sx('margin-bottom:22px;')}>
-            Borderless Trade operates at the intersection of trade facilitation and capital — helping African
+            Borderless Trade operates at the intersection of trade facilitation and capital, helping African
             enterprises, governments and trade institutions participate meaningfully in the AfCFTA era and beyond.
           </p>
           <p style={sx('margin-bottom:34px;')}>
@@ -195,7 +195,7 @@ export default function Home() {
                 Borderless Trade Network
               </div>
               <p style={sx('font-size:15px; color:#6B6478;')}>
-                Trade facilitation, market entry and MSME capacity building — convening governments, trade bodies and
+                Trade facilitation, market entry and MSME capacity building, convening governments, trade bodies and
                 private-sector players.
               </p>
             </div>
@@ -205,7 +205,7 @@ export default function Home() {
                 Borderless Trade &amp; Investments
               </div>
               <p style={sx('font-size:15px; color:#6B6478;')}>
-                Investment structuring and capital mobilisation — bankable deals, DFI and institutional capital, PPP
+                Investment structuring and capital mobilisation: bankable deals, DFI and institutional capital, PPP
                 structuring and de-risking.
               </p>
             </div>
@@ -285,7 +285,7 @@ export default function Home() {
           </tbody>
         </table>
         <p className="lbl" style={sx('color:#9A9284; margin-top:20px; text-transform:none; letter-spacing:.04em; font-size:11px;')}>
-          Illustrative track record — replace with verified transaction data.
+          Illustrative track record: replace with verified transaction data.
         </p>
       </div>
       </Section>

@@ -60,7 +60,7 @@ export default function About() {
             </p>
             <p style={sx('margin-bottom:20px;')}>
               What began as a focused platform to advance women's participation in trade has evolved into a
-              continental trade and investment ecosystem — one that convenes businesses, governments, and capital
+              continental trade and investment ecosystem, one that convenes businesses, governments, and capital
               across jurisdictions to unlock scalable economic value. Our mandate has expanded from facilitating
               programs and convenings to structuring strategic trade pathways that strengthen export competitiveness,
               deepen market access, and enhance investment readiness across Africa.
@@ -82,7 +82,7 @@ export default function About() {
               </span>
             </div>
             <p style={sx('font-size:15px; color:#5A5468;')}>
-              The trade facilitation and market expansion arm — enabling cross-border trade, export readiness, and
+              The trade facilitation and market expansion arm, enabling cross-border trade, export readiness, and
               market access.
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function About() {
               </span>
             </div>
             <p style={sx('font-size:15px; color:#5A5468;')}>
-              The investment structuring and capital mobilization arm — structuring bankable opportunities and
+              The investment structuring and capital mobilization arm, structuring bankable opportunities and
               aligning projects with institutional capital.
             </p>
           </div>
@@ -145,7 +145,7 @@ export default function About() {
             "font-family:'IBM Plex Mono',monospace; font-size:12px; color:#9A9284; border:1px dashed #C9C1B2; padding:16px 20px; border-radius:6px;"
           )}
         >
-          PLACEHOLDER — send real names,
+          PLACEHOLDER: send real names,
           <br />
           titles &amp; short bios to publish.
         </div>

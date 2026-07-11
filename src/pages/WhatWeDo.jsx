@@ -83,7 +83,7 @@ export default function WhatWeDo() {
       <Section background="#FBFAF6">
       <div className="pad-x" style={sx('padding:70px 56px 40px;')}>
         <p className="intro-lead" style={sx('font-size:22px; line-height:1.5; color:#3A3448; max-width:900px; font-weight:500;')}>
-          We connect African enterprises, governments, and institutions to global markets — across manufacturing,
+          We connect African enterprises, governments, and institutions to global markets, across manufacturing,
           agri-value chains, infrastructure and logistics, energy, healthcare, and export-oriented enterprises.
         </p>
       </div>

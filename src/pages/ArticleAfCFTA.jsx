@@ -11,12 +11,12 @@ export default function ArticleAfCFTA() {
     >
       <p className="lead">
         When the African Continental Free Trade Area (AfCFTA) agreement came into force, it was heralded as a
-        game-changer — a single market for 1.4 billion people with a combined GDP of $3.4 trillion. The vision was
+        game-changer: a single market for 1.4 billion people with a combined GDP of $3.4 trillion. The vision was
         undeniable: a borderless Africa, powered by its entrepreneurs.
       </p>
       <p>
         But years later, a persistent gap threatens this promise. The problem is no longer the policy; it's the{' '}
-        <strong>operating system</strong>. While tariffs are dropping, African SMEs — the engines of our economies —
+        <strong>operating system</strong>. While tariffs are dropping, African SMEs, the engines of our economies,
         are still navigating a labyrinth of non-tariff barriers, information silos, and financing deserts.
       </p>
       <p>
@@ -44,7 +44,7 @@ export default function ArticleAfCFTA() {
       </ol>
       <blockquote>
         "The AfCFTA is not merely a free trade agreement; it is a continental production agreement. Our mission is to
-        provide the logistics, finance, and data infrastructure that turns this vision of production into reality." —
+        provide the logistics, finance, and data infrastructure that turns this vision of production into reality." ·
         Dr. Ada Uzoamaka, Chief Strategy Officer
       </blockquote>
       <h3>The Borderless Trade Model: A Blueprint for Action</h3>
@@ -54,7 +54,7 @@ export default function ArticleAfCFTA() {
       </p>
       <p>
         <strong>1. Intelligence: From Overwhelmed to Export-Ready.</strong> Our AfCFTA Navigator Platform provides a
-        personalized pathway — rules of origin specific to a product, tariff schedules and sanitary standards for
+        personalized pathway: rules of origin specific to a product, tariff schedules and sanitary standards for
         target markets, and a curated list of vetted buyers and distributors from our network.
       </p>
       <p>
@@ -86,7 +86,7 @@ export default function ArticleAfCFTA() {
       </p>
       <p>
         The vision is set. The framework is signed. Now, we build.{' '}
-        <strong>The future of trade is not just continental — it's borderless.</strong>
+        <strong>The future of trade is not just continental: it's borderless.</strong>
       </p>
     </ArticleLayout>
   );
