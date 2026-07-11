@@ -1,0 +1,335 @@
+/* ===========================================================================
+   Responsive overrides — mobile phones (<=767px).
+   Desktop (>=768px) is untouched: every value here only applies inside the
+   media query below. Properties marked !important are intentional — they
+   override inline styles set via sx(), which is how the rest of the app is
+   authored (see src/lib/sx.js). Organized to mirror design_handoff_mobile_site
+   README's screen-by-screen breakdown.
+   =========================================================================== */
+
+/* ---------- Reusable grid / spacing / layout utilities ---------- */
+@media (max-width: 767px) {
+  .rgrid-1 {
+    grid-template-columns: 1fr !important;
+  }
+  .rgrid-2 {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  /* Page gutter: every section uses 56px horizontal padding on desktop; spec calls for 22px on mobile. */
+  .pad-x {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+  }
+  /* Generic vertical section padding squeeze for plain body sections (hero/CTA blocks get bespoke overrides). */
+  .pad-y {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  /* Header row with a heading + a "view all" link — stack instead of space-between. */
+  .rflex-col {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+  /* Spacer/filler grid cells that only exist to balance a desktop 2-col layout. */
+  .grid-filler {
+    display: none !important;
+  }
+  /* Desktop data tables become stacked label/value rows (header hidden, label from data-label). */
+  .responsive-table,
+  .responsive-table tbody,
+  .responsive-table tr {
+    display: block !important;
+  }
+  .responsive-table thead {
+    display: none !important;
+  }
+  .responsive-table tr {
+    padding: 14px 0;
+    border-bottom: 1px solid #dcd5c7;
+  }
+  .responsive-table td {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 5px 0 !important;
+    text-align: right !important;
+    border: none !important;
+  }
+  .responsive-table td::before {
+    content: attr(data-label);
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 10px;
+    color: #9a9284;
+    text-align: left;
+    flex-shrink: 0;
+  }
+}
+
+/* ---------- Nav / hamburger menu ---------- */
+.hamburger-btn {
+  display: none;
+}
+@media (max-width: 767px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  .hamburger-btn {
+    display: flex !important;
+  }
+  header[data-header] {
+    padding: 20px 22px !important;
+  }
+}
+
+/* ---------- Footer wordmark ---------- */
+@media (max-width: 767px) {
+  .wordmark-line {
+    font-size: clamp(40px, 15vw, 60px) !important;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  footer[data-footer] {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+  }
+  .footer-bottom-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+  }
+}
+
+/* ---------- Home ---------- */
+.mobile-stat-note {
+  display: none;
+}
+@media (max-width: 767px) {
+  .home-hero {
+    height: 558px !important;
+  }
+  .hero-text-pad {
+    padding-bottom: 40px !important;
+  }
+  .hero-h1 {
+    font-size: 44px !important;
+  }
+  .hero-sub {
+    font-size: 16px !important;
+    max-width: none !important;
+  }
+  .hero-btns {
+    flex-direction: column !important;
+  }
+  .hero-btn {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .home-stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .home-stats-grid > div {
+    border-right: none !important;
+    padding: 28px 16px !important;
+  }
+  .home-stats-grid > div:nth-child(odd) {
+    border-right: 1px solid rgba(246, 243, 236, 0.14) !important;
+  }
+  .home-stats-grid > div:not(:nth-last-child(-n + 2)) {
+    border-bottom: 1px solid rgba(246, 243, 236, 0.14) !important;
+  }
+  .stat-value {
+    font-size: 34px !important;
+  }
+  .mobile-stat-note {
+    display: flex !important;
+  }
+  .home-who-grid {
+    gap: 40px !important;
+  }
+  .arm-card {
+    background: #efeae1 !important;
+    padding: 24px !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-left: 4px solid #476c9b;
+  }
+  .arm-card.arm-bti {
+    border-left-color: #c1b098;
+  }
+  .pillar-row-grid {
+    border-top: 2px solid #0f0326 !important;
+  }
+  .pillar-row {
+    border-right: none !important;
+    padding: 28px 0 !important;
+    border-bottom: 1px solid #d8d1c4 !important;
+  }
+  .pillar-row-grid > .pillar-row:last-child {
+    border-bottom: none !important;
+  }
+  .audience-grid > div {
+    border-right: none !important;
+    padding: 20px 0 !important;
+  }
+  .women-spotlight-img {
+    height: 260px !important;
+    min-height: 0 !important;
+  }
+  .insights-grid > a:nth-child(3) {
+    display: none !important;
+  }
+  .insight-img {
+    height: 180px !important;
+  }
+}
+
+/* ---------- About / What We Do (shared hero pattern) ---------- */
+@media (max-width: 767px) {
+  .about-hero {
+    height: 440px !important;
+  }
+  .page-hero-h1 {
+    font-size: 32px !important;
+  }
+  .page-h2 {
+    font-size: 26px !important;
+    max-width: none !important;
+  }
+  .cta-h2-lg {
+    font-size: 30px !important;
+  }
+  .cta-h2-sm {
+    font-size: 24px !important;
+  }
+  .intro-lead {
+    font-size: 19px !important;
+  }
+  .pillar-card {
+    padding: 28px !important;
+  }
+}
+
+/* ---------- Track Record ---------- */
+@media (max-width: 767px) {
+  .page-hero-h1-serif {
+    font-size: 34px !important;
+  }
+  /* Programs & Partnerships table: title row full-width, not a generic label:value pair
+     (the Program name is long free text, unlike the other tables' short values). */
+  .programs-table,
+  .programs-table tbody,
+  .programs-table tr {
+    display: block !important;
+  }
+  .programs-table thead {
+    display: none !important;
+  }
+  .programs-table tr {
+    padding: 18px 0 !important;
+    border-bottom: 1px solid #dcd5c7;
+  }
+  .programs-table td {
+    display: block !important;
+    padding: 3px 0 !important;
+    border: none !important;
+    text-align: left !important;
+  }
+  .impact-grid > div {
+    border-right: none !important;
+    padding: 24px 16px !important;
+  }
+  .impact-grid > div:nth-child(odd) {
+    border-right: 1px solid #d8d1c4 !important;
+  }
+  .impact-grid > div:not(:nth-last-child(-n + 2)) {
+    border-bottom: 1px solid #d8d1c4 !important;
+  }
+  .impact-value {
+    font-size: 34px !important;
+  }
+}
+
+/* ---------- Women in Trade ---------- */
+@media (max-width: 767px) {
+  .women-hero {
+    height: 520px !important;
+  }
+  .women-h1 {
+    font-size: 44px !important;
+  }
+  .section-h2 {
+    font-size: 27px !important;
+  }
+  .wit-stats-grid > div {
+    border-right: none !important;
+    padding: 24px 16px !important;
+  }
+  .wit-stats-grid > div:nth-child(odd) {
+    border-right: 1px solid rgba(246, 243, 236, 0.14) !important;
+  }
+  .wit-stats-grid > div:not(:nth-last-child(-n + 2)) {
+    border-bottom: 1px solid rgba(246, 243, 236, 0.14) !important;
+  }
+  .program-cover-grid {
+    border-top: 2px solid #0f0326 !important;
+  }
+  .program-cover-cell {
+    border-right: none !important;
+    padding: 26px 0 !important;
+  }
+  .cohort-row {
+    gap: 8px !important;
+    padding: 24px 0 !important;
+  }
+  .cohort-tag {
+    text-align: left !important;
+    margin-top: 4px;
+  }
+}
+
+/* ---------- News ---------- */
+@media (max-width: 767px) {
+  .news-h1 {
+    font-size: 34px !important;
+  }
+  .news-img {
+    height: 200px !important;
+  }
+}
+
+/* ---------- Contact ---------- */
+@media (max-width: 767px) {
+  .contact-h1 {
+    font-size: 32px !important;
+  }
+}
+
+/* ---------- Article pages (not covered by the mobile spec; extrapolated for consistency) ---------- */
+@media (max-width: 767px) {
+  .article-h1 {
+    font-size: 32px !important;
+  }
+}
+
+/* ---------- Partners marquee ---------- */
+@media (max-width: 767px) {
+  .partners-marquee-track {
+    animation-duration: 34s !important;
+  }
+  /* The negative margin bleeds the marquee edge-to-edge based on the parent's horizontal
+     padding — must match pad-x's 22px, or it would overshoot the viewport on mobile. */
+  .marquee-bleed {
+    margin-left: -22px !important;
+    margin-right: -22px !important;
+  }
+  .partner-tile {
+    width: 150px !important;
+    height: 120px !important;
+  }
+}

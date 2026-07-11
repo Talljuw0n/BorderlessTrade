@@ -11,7 +11,7 @@ export default function ArticleLayout({ breadcrumb, title, date, heroImage, tags
 
       {/* ARTICLE HERO */}
       <Section background="#0F0326">
-        <div style={sx('padding:64px 56px 72px; color:#F6F3EC;')}>
+        <div className="pad-x" style={sx('padding:64px 56px 72px; color:#F6F3EC;')}>
           <div style={sx('max-width:860px; margin:0 auto;')}>
             <div className="lbl" style={sx('color:#8E86A0; margin-bottom:22px;')}>
               <Link to="/news" style={sx('color:#8E86A0;')}>
@@ -20,6 +20,7 @@ export default function ArticleLayout({ breadcrumb, title, date, heroImage, tags
               &nbsp;·&nbsp; {breadcrumb}
             </div>
             <h1
+              className="article-h1"
               style={sx(
                 "font-family:'Newsreader',serif; font-weight:500; font-size:52px; line-height:1.08; letter-spacing:-.015em; color:#F6F3EC; margin-bottom:24px;"
               )}
@@ -43,12 +44,12 @@ export default function ArticleLayout({ breadcrumb, title, date, heroImage, tags
       </div>
 
       {/* ARTICLE BODY */}
-      <div className="article-body" style={sx('max-width:760px; margin:0 auto; padding:72px 56px 40px;')}>
+      <div className="article-body pad-x" style={sx('max-width:760px; margin:0 auto; padding:72px 56px 40px;')}>
         {children}
       </div>
 
       {/* TAGS + BACK LINK */}
-      <div style={sx('max-width:760px; margin:0 auto; padding:0 56px 80px;')}>
+      <div className="pad-x" style={sx('max-width:760px; margin:0 auto; padding:0 56px 80px;')}>
         <div
           style={sx(
             'display:flex; flex-wrap:wrap; gap:10px; padding-top:28px; border-top:1px solid #D8D1C4; margin-bottom:36px;'

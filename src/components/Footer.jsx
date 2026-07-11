@@ -5,6 +5,7 @@ function Wordmark() {
   return (
     <div style={sx('margin:8px -6px 0; overflow:visible; padding-top:0.18em;')}>
       <div
+        className="wordmark-line"
         style={sx(
           "font-family:'Newsreader',serif; font-weight:600; font-size:clamp(80px, 17vw, 300px); line-height:0.8; letter-spacing:-.02em; color:#0F0326; white-space:nowrap;"
         )}
@@ -12,6 +13,7 @@ function Wordmark() {
         Borderless
       </div>
       <div
+        className="wordmark-line"
         style={sx(
           "font-family:'Newsreader',serif; font-weight:600; font-size:clamp(80px, 17vw, 300px); line-height:0.8; letter-spacing:-.02em; color:#0F0326; white-space:nowrap; text-align:right; margin-top:-4px;"
         )}
@@ -25,11 +27,13 @@ function Wordmark() {
 export function FooterHome() {
   return (
     <footer
+      data-footer
       style={sx(
         'background:#F6F3EC; color:#0F0326; padding:76px 56px 0; position:relative; overflow-x:hidden; overflow-y:visible; border-top:1px solid #D8D1C4;'
       )}
     >
       <div
+        className="footer-grid"
         style={sx(
           'display:grid; grid-template-columns:1.4fr 1fr .9fr; gap:40px; margin-bottom:64px;'
         )}
@@ -86,6 +90,7 @@ export function FooterHome() {
         </div>
       </div>
       <div
+        className="footer-grid"
         style={sx(
           'display:grid; grid-template-columns:1.4fr 1fr .9fr; gap:40px; margin-bottom:70px;'
         )}
@@ -145,6 +150,7 @@ export function FooterHome() {
       </div>
       <Wordmark />
       <div
+        className="footer-bottom-bar"
         style={sx(
           'display:flex; justify-content:space-between; align-items:center; padding:20px 0; border-top:1px solid #D8D1C4;'
         )}
@@ -166,11 +172,13 @@ export function FooterHome() {
 export function FooterSimple() {
   return (
     <footer
+      data-footer
       style={sx(
         'background:#F6F3EC; color:#0F0326; padding:70px 56px 0; overflow-x:hidden; overflow-y:visible; border-top:1px solid #D8D1C4;'
       )}
     >
       <div
+        className="footer-grid"
         style={sx(
           'display:grid; grid-template-columns:1.5fr 1fr 1fr; gap:40px; margin-bottom:56px;'
         )}

@@ -46,12 +46,13 @@ export default function News() {
 
       {/* PAGE HERO */}
       <Section background="#0F0326">
-        <div style={sx('padding:74px 56px 78px; color:#F6F3EC;')}>
+        <div className="pad-x" style={sx('padding:74px 56px 78px; color:#F6F3EC;')}>
           <div style={sx('max-width:1200px; margin:0 auto;')}>
             <div className="lbl" style={sx('color:#C1B098; margin-bottom:20px;')}>
               Insights &amp; News
             </div>
             <h1
+              className="news-h1"
               style={sx(
                 "font-family:'Newsreader',serif; font-weight:500; font-size:56px; line-height:1.04; letter-spacing:-.02em; max-width:760px;"
               )}
@@ -63,8 +64,8 @@ export default function News() {
       </Section>
 
       {/* GRID */}
-      <div style={sx('padding:72px 56px 96px;')}>
-        <div style={sx('max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:32px;')}>
+      <div className="pad-x pad-y" style={sx('padding:72px 56px 96px;')}>
+        <div className="rgrid-1" style={sx('max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:32px;')}>
           {articles.map((a) => (
             <Link
               key={a.to}
@@ -72,6 +73,7 @@ export default function News() {
               style={sx('color:inherit; display:flex; flex-direction:column; background:#FBFAF6; border:1px solid #E2DBCC;')}
             >
               <div
+                className="news-img"
                 style={sx(`height:220px; background:#0F0326 url('${a.image}') center/cover no-repeat;`)}
               ></div>
               <div style={sx('padding:26px; display:flex; flex-direction:column; flex:1;')}>

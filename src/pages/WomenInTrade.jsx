@@ -89,7 +89,7 @@ export default function WomenInTrade() {
   return (
     <div style={sx('width:100%; background:#F6F3EC; font-size:17px; line-height:1.6; overflow-x:hidden;')}>
       {/* HERO + OVERLAY NAV (centered heading) */}
-      <div style={sx('position:relative; height:620px; overflow:hidden; background:#0F0326;')}>
+      <div className="women-hero" style={sx('position:relative; height:620px; overflow:hidden; background:#0F0326;')}>
         <img
           src="https://borderlesstrade.com/wp-content/uploads/2026/03/Borderless-Trade-1.jpeg"
           alt="African Women Entrepreneurs cohort"
@@ -104,6 +104,7 @@ export default function WomenInTrade() {
         ></div>
         <Header overlay />
         <div
+          className="pad-x"
           style={sx(
             'position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:0 56px;'
           )}
@@ -117,6 +118,7 @@ export default function WomenInTrade() {
             <span style={sx('width:30px; height:1px; background:#C1B098;')}></span>
           </div>
           <h1
+            className="women-h1"
             style={sx(
               "font-family:'Newsreader',serif; font-weight:500; font-size:76px; line-height:1.0; letter-spacing:-.02em; color:#F6F3EC; max-width:900px;"
             )}
@@ -132,13 +134,13 @@ export default function WomenInTrade() {
 
       {/* STATS */}
       <Section background="#48483A">
-        <div style={sx('color:#F6F3EC; display:grid; grid-template-columns:repeat(4,1fr);')}>
+        <div className="rgrid-2 wit-stats-grid" style={sx('color:#F6F3EC; display:grid; grid-template-columns:repeat(4,1fr);')}>
           {stats.map((s, i) => (
             <div
               key={s.label}
               style={sx(`padding:40px 26px;${i < stats.length - 1 ? ' border-right:1px solid rgba(246,243,236,.14);' : ''}`)}
             >
-              <div style={sx("font-family:'Newsreader',serif; font-size:40px; font-weight:500;")}>{s.value}</div>
+              <div className="stat-value" style={sx("font-family:'Newsreader',serif; font-size:40px; font-weight:500;")}>{s.value}</div>
               <div className="lbl" style={sx('color:#C1B098; margin-top:8px; font-size:10px;')}>
                 {s.label}
               </div>
@@ -148,12 +150,12 @@ export default function WomenInTrade() {
       </Section>
 
       {/* OUR ORIGIN STORY */}
-      <div style={sx('padding:88px 56px; display:grid; grid-template-columns:.42fr .58fr; gap:64px;')}>
+      <div className="pad-x pad-y rgrid-1 home-who-grid" style={sx('padding:88px 56px; display:grid; grid-template-columns:.42fr .58fr; gap:64px;')}>
         <div>
           <div className="lbl" style={sx('color:#476C9B; margin-bottom:20px;')}>
             Our origin story
           </div>
-          <h2 style={sx("font-family:'Newsreader',serif; font-weight:500; font-size:38px; line-height:1.15; color:#0F0326;")}>
+          <h2 className="section-h2" style={sx("font-family:'Newsreader',serif; font-weight:500; font-size:38px; line-height:1.15; color:#0F0326;")}>
             What began with women in trade became Borderless Trade.
           </h2>
         </div>
@@ -177,18 +179,18 @@ export default function WomenInTrade() {
       </div>
 
       {/* WHAT THE PROGRAM COVERS */}
-      <div style={sx('padding:88px 56px;')}>
+      <div className="pad-x pad-y" style={sx('padding:88px 56px;')}>
         <div className="lbl" style={sx('color:#476C9B; margin-bottom:30px;')}>
           What the program covers
         </div>
-        <div style={sx('display:grid; grid-template-columns:repeat(3,1fr); border-top:2px solid #0F0326;')}>
+        <div className="rgrid-1 program-cover-grid" style={sx('display:grid; grid-template-columns:repeat(3,1fr); border-top:2px solid #0F0326;')}>
           {pillars.map((p, i) => {
             const col = i % 3;
             const padding =
               col === 0 ? '34px 34px 40px 0' : '34px 34px 40px 34px';
             const border = `border-bottom:1px solid #D8D1C4;${col !== 2 ? ' border-right:1px solid #D8D1C4;' : ''}`;
             return (
-              <div key={p.n} style={sx(`padding:${padding}; ${border}`)}>
+              <div key={p.n} className="program-cover-cell" style={sx(`padding:${padding}; ${border}`)}>
                 <div style={sx("font-family:'IBM Plex Mono',monospace; color:#C1B098; font-size:14px; margin-bottom:22px;")}>
                   {p.n}
                 </div>
@@ -200,6 +202,7 @@ export default function WomenInTrade() {
             );
           })}
           <div
+            className="program-cover-cell"
             style={sx(
               'padding:34px 0 40px 34px; border-bottom:1px solid #D8D1C4; display:flex; flex-direction:column; justify-content:center; background:#EFEAE0;'
             )}
@@ -214,7 +217,7 @@ export default function WomenInTrade() {
 
       {/* COHORTS & CONVENINGS */}
       <Section background="#EFEAE0">
-        <div style={sx('padding:88px 56px;')}>
+        <div className="pad-x pad-y" style={sx('padding:88px 56px;')}>
           <div className="lbl" style={sx('color:#476C9B; margin-bottom:30px;')}>
             Cohorts &amp; convenings
           </div>
@@ -222,6 +225,7 @@ export default function WomenInTrade() {
             {cohorts.map((c, i) => (
               <div
                 key={`${c.title}-${i}`}
+                className="rgrid-1 cohort-row"
                 style={sx(
                   'display:grid; grid-template-columns:120px 1fr 260px; gap:40px; align-items:baseline; padding:30px 0; border-bottom:1px solid #D8D1C4;'
                 )}
@@ -235,7 +239,7 @@ export default function WomenInTrade() {
                   </h3>
                   <p style={sx('font-size:15px; color:#6B6478; max-width:640px;')}>{c.body}</p>
                 </div>
-                <span className="lbl" style={sx('color:#476C9B; font-size:10px; text-align:right;')}>
+                <span className="lbl cohort-tag" style={sx('color:#476C9B; font-size:10px; text-align:right;')}>
                   {c.tag}
                 </span>
               </div>
@@ -245,11 +249,11 @@ export default function WomenInTrade() {
       </Section>
 
       {/* IN THE ROOM */}
-      <div style={sx('padding:88px 56px;')}>
+      <div className="pad-x pad-y" style={sx('padding:88px 56px;')}>
         <div className="lbl" style={sx('color:#476C9B; margin-bottom:30px;')}>
           In the room
         </div>
-        <div style={sx('display:grid; grid-template-columns:repeat(4,1fr); gap:16px;')}>
+        <div className="rgrid-2" style={sx('display:grid; grid-template-columns:repeat(4,1fr); gap:16px;')}>
           {gallery.map((src) => (
             <div
               key={src}
@@ -261,9 +265,9 @@ export default function WomenInTrade() {
 
       {/* CTA */}
       <Section background="#476C9B">
-        <div style={sx('padding:88px 56px; color:#F6F3EC;')}>
+        <div className="pad-x pad-y" style={sx('padding:88px 56px; color:#F6F3EC;')}>
           <div style={sx('max-width:760px;')}>
-            <h2 style={sx("font-family:'Newsreader',serif; font-weight:500; font-size:40px; line-height:1.08; margin-bottom:22px;")}>
+            <h2 className="cta-h2-lg" style={sx("font-family:'Newsreader',serif; font-weight:500; font-size:40px; line-height:1.08; margin-bottom:22px;")}>
               Partner with the Women in Trade program.
             </h2>
             <p style={sx('font-size:18px; color:#E4E1EC; margin-bottom:30px; max-width:560px;')}>

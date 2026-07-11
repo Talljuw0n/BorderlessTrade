@@ -8,20 +8,20 @@ export default function Contact() {
       <Header />
 
       {/* BODY */}
-      <div style={sx('display:grid; grid-template-columns:1.1fr .9fr; align-items:stretch;')}>
+      <div className="rgrid-1" style={sx('display:grid; grid-template-columns:1.1fr .9fr; align-items:stretch;')}>
         {/* FORM */}
-        <div style={sx('padding:84px 56px;')}>
+        <div className="pad-x pad-y" style={sx('padding:84px 56px;')}>
           <div className="lbl" style={sx('color:#476C9B; margin-bottom:16px;')}>
             Get in Touch
           </div>
-          <h1 style={sx("font-family:'Newsreader',serif; font-weight:500; font-size:44px; line-height:1.06; letter-spacing:-.01em; margin-bottom:12px; color:#0F0326;")}>
+          <h1 className="contact-h1" style={sx("font-family:'Newsreader',serif; font-weight:500; font-size:44px; line-height:1.06; letter-spacing:-.01em; margin-bottom:12px; color:#0F0326;")}>
             Let's start a conversation.
           </h1>
           <p style={sx('font-size:17px; color:#6B6478; margin-bottom:36px; max-width:460px;')}>
             We usually respond within 24 hours. You're also welcome to call our offices directly.
           </p>
           <form onSubmit={(e) => e.preventDefault()} style={sx('display:flex; flex-direction:column; gap:20px;')}>
-            <div style={sx('display:grid; grid-template-columns:1fr 1fr; gap:20px;')}>
+            <div className="rgrid-1" style={sx('display:grid; grid-template-columns:1fr 1fr; gap:20px;')}>
               <div>
                 <label className="lbl" style={sx('color:#48483A; margin-bottom:8px;')}>
                   Full Name
@@ -72,7 +72,7 @@ export default function Contact() {
         </div>
 
         {/* DETAILS */}
-        <div style={sx('padding:84px 56px; background:#0F0326; color:#F6F3EC;')}>
+        <div className="pad-x pad-y" style={sx('padding:84px 56px; background:#0F0326; color:#F6F3EC;')}>
           <div className="lbl" style={sx('color:#C1B098; margin-bottom:26px;')}>
             Direct Contact
           </div>
@@ -105,7 +105,7 @@ export default function Contact() {
           <div className="lbl" style={sx('color:#C1B098; margin-bottom:20px;')}>
             Offices
           </div>
-          <div style={sx('display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:22px;')}>
+          <div className="rgrid-2" style={sx('display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:22px;')}>
             <div>
               <div style={sx("font-family:'Newsreader',serif; font-size:20px; margin-bottom:6px;")}>Lagos</div>
               <p style={sx('font-size:14px; color:#B7B0C2;')}>Nigeria</p>
@@ -115,7 +115,7 @@ export default function Contact() {
               <p style={sx('font-size:14px; color:#B7B0C2;')}>United Kingdom</p>
             </div>
           </div>
-          <div style={sx('display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:34px;')}>
+          <div className="rgrid-1" style={sx('display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:34px;')}>
             <div style={sx('border:1px solid #2C2543; border-radius:6px; overflow:hidden;')}>
               <iframe
                 title="Lagos office map"

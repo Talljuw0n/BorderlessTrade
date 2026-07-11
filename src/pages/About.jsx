@@ -17,7 +17,7 @@ export default function About() {
   return (
     <div style={sx('width:100%; background:#EFEAE1; font-size:16px; line-height:1.6; overflow-x:hidden;')}>
       {/* HERO + OVERLAY NAV */}
-      <div style={sx('position:relative; height:560px; overflow:hidden; background:#0F0326;')}>
+      <div className="about-hero" style={sx('position:relative; height:560px; overflow:hidden; background:#0F0326;')}>
         <img
           src="/uploads/trade-scaled.webp"
           alt=""
@@ -29,12 +29,12 @@ export default function About() {
           )}
         ></div>
         <Header overlay />
-        <div style={sx('position:absolute; inset:0; display:flex; flex-direction:column; justify-content:flex-end; padding:0 56px 60px;')}>
+        <div className="pad-x" style={sx('position:absolute; inset:0; display:flex; flex-direction:column; justify-content:flex-end; padding:0 56px 60px;')}>
           <div style={sx('max-width:760px; border-left:3px solid #476C9B; padding-left:28px;')}>
             <div className="lbl" style={sx('color:#C1B098; margin-bottom:18px;')}>
               Who We Are
             </div>
-            <h1 style={sx('font-weight:800; font-size:50px; line-height:1.06; letter-spacing:-.02em; color:#F6F3EC;')}>
+            <h1 className="page-hero-h1" style={sx('font-weight:800; font-size:50px; line-height:1.06; letter-spacing:-.02em; color:#F6F3EC;')}>
               Building the institutional backbone for Africa's trade and investment integration.
             </h1>
           </div>
@@ -43,13 +43,13 @@ export default function About() {
 
       {/* OUR STORY */}
       <Section background="#FBFAF6">
-      <div style={sx('padding:88px 56px;')}>
-        <div style={sx('display:grid; grid-template-columns:.4fr .6fr; gap:56px;')}>
+      <div className="pad-x pad-y" style={sx('padding:88px 56px;')}>
+        <div className="rgrid-1" style={sx('display:grid; grid-template-columns:.4fr .6fr; gap:56px;')}>
           <div>
             <div className="lbl" style={sx('color:#476C9B; margin-bottom:18px;')}>
               Our Story
             </div>
-            <h2 style={sx('font-weight:800; font-size:32px; line-height:1.14; letter-spacing:-.01em; max-width:340px;')}>
+            <h2 className="page-h2" style={sx('font-weight:800; font-size:32px; line-height:1.14; letter-spacing:-.01em; max-width:340px;')}>
               A conviction that Africa should engage the world without barriers.
             </h2>
           </div>
@@ -73,7 +73,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div style={sx('display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:52px;')}>
+        <div className="rgrid-1" style={sx('display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:52px;')}>
           <div style={sx('background:#EFEAE1; padding:34px; border-left:4px solid #476C9B;')}>
             <div style={sx('display:flex; align-items:center; gap:12px; margin-bottom:12px;')}>
               <span style={sx('font-weight:800; font-size:24px;')}>BTN</span>
@@ -110,14 +110,14 @@ export default function About() {
       </Section>
 
       {/* VISION & VALUES */}
-      <div style={sx('padding:88px 56px;')}>
+      <div className="pad-x pad-y" style={sx('padding:88px 56px;')}>
         <div className="lbl" style={sx('color:#476C9B; margin-bottom:14px;')}>
           Vision &amp; Values
         </div>
-        <h2 style={sx('font-weight:800; font-size:32px; letter-spacing:-.01em; margin-bottom:44px; max-width:620px;')}>
+        <h2 className="page-h2" style={sx('font-weight:800; font-size:32px; letter-spacing:-.01em; margin-bottom:44px; max-width:620px;')}>
           The principles that shape how we build across borders.
         </h2>
-        <div style={sx('display:grid; grid-template-columns:repeat(3,1fr); gap:22px;')}>
+        <div className="rgrid-2" style={sx('display:grid; grid-template-columns:repeat(3,1fr); gap:22px;')}>
           {values.map((v) => (
             <div key={v.n} style={sx('background:#FBFAF6; border:1px solid #E4DDCE; padding:30px;')}>
               <div style={sx("font-family:'IBM Plex Mono',monospace; color:#C1B098; font-size:13px; margin-bottom:20px;")}>
@@ -131,7 +131,7 @@ export default function About() {
       </div>
 
       {/* LEADERSHIP PLACEHOLDER */}
-      <div style={sx('padding:70px 56px; display:flex; align-items:center; justify-content:space-between; gap:40px; flex-wrap:wrap;')}>
+      <div className="pad-x pad-y" style={sx('padding:70px 56px; display:flex; align-items:center; justify-content:space-between; gap:40px; flex-wrap:wrap;')}>
         <div>
           <div className="lbl" style={sx('color:#476C9B; margin-bottom:14px;')}>
             Leadership
@@ -153,8 +153,8 @@ export default function About() {
 
       {/* CTA */}
       <Section background="#0F0326">
-        <div style={sx('padding:78px 56px; color:#F6F3EC; text-align:center;')}>
-          <h2 style={sx("font-family:'Newsreader',serif; font-weight:500; font-size:42px; letter-spacing:-.01em; margin-bottom:14px;")}>
+        <div className="pad-x pad-y" style={sx('padding:78px 56px; color:#F6F3EC; text-align:center;')}>
+          <h2 className="cta-h2-lg" style={sx("font-family:'Newsreader',serif; font-weight:500; font-size:42px; letter-spacing:-.01em; margin-bottom:14px;")}>
             Ready to work together?
           </h2>
           <p style={sx('font-size:18px; color:#C9C3D2; margin-bottom:30px;')}>

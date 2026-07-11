@@ -63,13 +63,13 @@ export default function TrackRecord() {
 
       {/* HERO */}
       <Section background="#0F0326">
-        <div style={sx('padding:84px 56px 74px; color:#F6F3EC;')}>
+        <div className="pad-x" style={sx('padding:84px 56px 74px; color:#F6F3EC;')}>
           <div style={sx('max-width:820px;')}>
             <div className="lbl" style={sx('color:#C1B098; margin-bottom:22px; display:flex; align-items:center; gap:12px;')}>
               <span style={sx('width:34px; height:1px; background:#C1B098; display:inline-block;')}></span>
               Track Record
             </div>
-            <h1 style={sx("font-family:'Newsreader',serif; font-weight:500; font-size:50px; line-height:1.08; letter-spacing:-.01em; margin-bottom:20px;")}>
+            <h1 className="page-hero-h1-serif" style={sx("font-family:'Newsreader',serif; font-weight:500; font-size:50px; line-height:1.08; letter-spacing:-.01em; margin-bottom:20px;")}>
               Programs, partnerships and initiatives across Africa.
             </h1>
             <p style={sx('font-size:18px; color:#C9C3D2; max-width:640px;')}>
@@ -81,11 +81,11 @@ export default function TrackRecord() {
       </Section>
 
       {/* PROGRAMS & PARTNERSHIPS */}
-      <div style={sx('padding:80px 56px;')}>
+      <div className="pad-x pad-y" style={sx('padding:80px 56px;')}>
         <div className="lbl" style={sx('color:#476C9B; margin-bottom:28px;')}>
           Programs &amp; Partnerships
         </div>
-        <table style={sx('width:100%; border-collapse:collapse; font-size:15px;')}>
+        <table className="programs-table" style={sx('width:100%; border-collapse:collapse; font-size:15px;')}>
           <thead>
             <tr style={sx('border-top:2px solid #0F0326; border-bottom:1px solid #C9C1B2;')}>
               <th className="lbl" style={sx('text-align:left; padding:14px 16px 14px 0; width:34%;')}>Program</th>
@@ -97,10 +97,11 @@ export default function TrackRecord() {
           <tbody style={sx('color:#3A3448;')}>
             {programs.map((p, i) => (
               <tr key={p.name} style={sx(i < programs.length - 1 ? 'border-bottom:1px solid #DCD5C7;' : '')}>
-                <td style={sx("padding:18px 16px 18px 0; font-family:'Newsreader',serif; font-size:18px; color:#0F0326;")}>
+                <td data-label="Program" style={sx("padding:18px 16px 18px 0; font-family:'Newsreader',serif; font-size:18px; color:#0F0326;")}>
                   {p.name}
                 </td>
                 <td
+                  data-label="Partners"
                   style={sx(
                     `padding:18px 16px; color:${p.partners === '—' ? '#9A9284' : '#6B6478'};${
                       p.partners === '—' ? ' font-style:italic;' : ''
@@ -110,13 +111,14 @@ export default function TrackRecord() {
                   {p.partners}
                 </td>
                 <td
+                  data-label="Year"
                   style={sx(
                     `padding:18px 16px; font-family:'IBM Plex Mono',monospace;${p.year === 'TBC' ? ' color:#9A9284;' : ''}`
                   )}
                 >
                   {p.year}
                 </td>
-                <td style={sx('padding:18px 0 18px 16px; color:#476C9B; font-size:13px;')}>{p.category}</td>
+                <td data-label="Category" style={sx('padding:18px 0 18px 16px; color:#476C9B; font-size:13px;')}>{p.category}</td>
               </tr>
             ))}
           </tbody>
@@ -126,11 +128,11 @@ export default function TrackRecord() {
 
       {/* IMPACT AT A GLANCE */}
       <Section background="#EFEAE0">
-        <div style={sx('padding:80px 56px;')}>
+        <div className="pad-x pad-y" style={sx('padding:80px 56px;')}>
           <div className="lbl" style={sx('color:#476C9B; margin-bottom:28px;')}>
             Impact at a glance
           </div>
-          <div style={sx('display:grid; grid-template-columns:repeat(4,1fr); border-top:2px solid #0F0326;')}>
+          <div className="rgrid-2 impact-grid" style={sx('display:grid; grid-template-columns:repeat(4,1fr); border-top:2px solid #0F0326;')}>
             {impactMetrics.map((m, i) => (
               <div
                 key={m.label}
@@ -140,7 +142,7 @@ export default function TrackRecord() {
                   }`
                 )}
               >
-                <div style={sx("font-family:'Newsreader',serif; font-size:46px; color:#0F0326;")}>{m.value}</div>
+                <div className="impact-value" style={sx("font-family:'Newsreader',serif; font-size:46px; color:#0F0326;")}>{m.value}</div>
                 <div className="lbl" style={sx('color:#9A9284; margin-top:8px; font-size:10px;')}>
                   {m.label}
                 </div>
@@ -152,18 +154,18 @@ export default function TrackRecord() {
 
       {/* DEALS LEDGER PLACEHOLDER */}
       <Section background="#0F0326">
-        <div style={sx('padding:80px 56px; color:#F6F3EC;')}>
+        <div className="pad-x pad-y" style={sx('padding:80px 56px; color:#F6F3EC;')}>
           <div className="lbl" style={sx('color:#C1B098; margin-bottom:14px;')}>
             Deals &amp; Capital Mobilised
           </div>
-          <h2 style={sx("font-family:'Newsreader',serif; font-weight:500; font-size:32px; letter-spacing:-.01em; margin-bottom:10px;")}>
+          <h2 className="cta-h2-sm" style={sx("font-family:'Newsreader',serif; font-weight:500; font-size:32px; letter-spacing:-.01em; margin-bottom:10px;")}>
             A transaction ledger builds credibility fastest.
           </h2>
           <p style={sx('font-size:16px; color:#C9C3D2; max-width:680px; margin-bottom:30px;')}>
             Even three or four real disclosed deals here — sector, date, amount, role — will do more for investor and
             DFI confidence than any headline statistic.
           </p>
-          <table style={sx('width:100%; border-collapse:collapse; font-size:15px;')}>
+          <table className="responsive-table" style={sx('width:100%; border-collapse:collapse; font-size:15px;')}>
             <thead>
               <tr style={sx('border-bottom:1px solid #2C2543;')}>
                 <th className="lbl" style={sx('text-align:left; padding:12px 16px 12px 0; color:#8E86A0;')}>Sector</th>
@@ -175,10 +177,10 @@ export default function TrackRecord() {
             <tbody style={sx("color:#8E86A0; font-family:'IBM Plex Mono',monospace;")}>
               {[0, 1, 2].map((i) => (
                 <tr key={i} style={sx(i < 2 ? 'border-bottom:1px solid #221B3A;' : '')}>
-                  <td style={sx('padding:16px 16px 16px 0;')}>[ sector ]</td>
-                  <td style={sx('padding:16px;')}>[ date ]</td>
-                  <td style={sx('padding:16px; text-align:right;')}>[ amount ]</td>
-                  <td style={sx('padding:16px 0 16px 16px;')}>[ role ]</td>
+                  <td data-label="Sector" style={sx('padding:16px 16px 16px 0;')}>[ sector ]</td>
+                  <td data-label="Date" style={sx('padding:16px;')}>[ date ]</td>
+                  <td data-label="Amount" style={sx('padding:16px; text-align:right;')}>[ amount ]</td>
+                  <td data-label="Role" style={sx('padding:16px 0 16px 16px;')}>[ role ]</td>
                 </tr>
               ))}
             </tbody>
@@ -191,8 +193,8 @@ export default function TrackRecord() {
 
       {/* CTA */}
       <Section background="#F6F3EC" outerStyle="border-top:1px solid #D8D1C4;">
-        <div style={sx('padding:78px 56px; color:#0F0326; text-align:center;')}>
-          <h2 style={sx("font-family:'Newsreader',serif; font-weight:500; font-size:40px; letter-spacing:-.01em; margin-bottom:14px;")}>
+        <div className="pad-x pad-y" style={sx('padding:78px 56px; color:#0F0326; text-align:center;')}>
+          <h2 className="cta-h2-lg" style={sx("font-family:'Newsreader',serif; font-weight:500; font-size:40px; letter-spacing:-.01em; margin-bottom:14px;")}>
             Discuss a partnership
           </h2>
           <p style={sx('font-size:18px; color:#6B6478; margin-bottom:30px;')}>
