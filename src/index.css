@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Archivo:wght@400;500;600;700&family=Libre+Franklin:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  background: #F6F3EC;
+  font-family: 'Archivo', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #476c9b;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0f0326;
+}
+
+.lbl {
+  font-family: 'IBM Plex Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 11px;
+}
+
+input,
+select,
+textarea {
+  font-family: 'Archivo', sans-serif;
+  font-size: 15px;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #D8D1C4;
+  background: #fff;
+  color: #0f0326;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #476c9b;
+}
+
+label {
+  display: block;
+}
+
+@keyframes bt-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.article-body h3 {
+  font-family: 'Newsreader', serif;
+  font-weight: 600;
+  font-size: 26px;
+  color: #0f0326;
+  margin: 42px 0 14px;
+  line-height: 1.25;
+}
+.article-body p {
+  font-size: 18px;
+  line-height: 1.75;
+  color: #3A3448;
+  margin-bottom: 22px;
+}
+.article-body ul,
+.article-body ol {
+  padding-left: 24px;
+  margin-bottom: 24px;
+}
+.article-body li {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #3A3448;
+  margin-bottom: 12px;
+}
+.article-body blockquote {
+  border-left: 3px solid #476c9b;
+  padding-left: 24px;
+  margin: 32px 0;
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #0f0326;
+}
+.article-body strong {
+  color: #0f0326;
+  font-weight: 600;
+}
+.article-body .lead {
+  font-size: 21px;
+  line-height: 1.6;
+  color: #0f0326;
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  margin-bottom: 30px;
+}
