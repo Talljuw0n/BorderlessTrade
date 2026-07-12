@@ -90,6 +90,13 @@
   .wordmark-line {
     font-size: clamp(40px, 15vw, 60px) !important;
   }
+  /* At this font-size range the two stacked lines' bounding boxes are close enough that the
+     negative margin tuned for the desktop clamp (up to 300px) makes them visually collide,
+     since "Borderless" spans nearly the full width here and shares horizontal space with the
+     right-aligned "Trade" below it. Give the second line a small positive gap instead. */
+  .wordmark-line:last-child {
+    margin-top: 6px !important;
+  }
   .footer-grid {
     grid-template-columns: 1fr !important;
     gap: 32px !important;
