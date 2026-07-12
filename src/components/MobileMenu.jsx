@@ -24,7 +24,9 @@ export default function MobileMenu({ open, onClose }) {
       style={sx(
         `position:fixed; inset:0; z-index:1000; background:#0F0326; display:flex; flex-direction:column; padding:20px 22px 32px; overflow-y:auto; transform:translateY(${
           open ? '0' : '-100%'
-        }); transition:transform .5s cubic-bezier(.7,0,.15,1); ${open ? '' : 'pointer-events:none;'}`
+        }); visibility:${open ? 'visible' : 'hidden'}; transition:transform .5s cubic-bezier(.7,0,.15,1), visibility 0s ${
+          open ? '0s' : '.5s'
+        }; ${open ? '' : 'pointer-events:none;'}`
       )}
     >
       <div style={sx('display:flex; justify-content:flex-end;')}>

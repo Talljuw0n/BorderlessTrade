@@ -137,16 +137,16 @@ export default function Contact() {
             Follow
           </div>
           <div style={sx('display:flex; gap:22px;')}>
-            <a href="#" style={sx('color:#B7B0C2; font-size:14px;')}>
+            <a href="https://www.facebook.com/borderlesstradenetwork/" target="_blank" rel="noopener noreferrer" style={sx('color:#B7B0C2; font-size:14px;')}>
               Facebook
             </a>
-            <a href="#" style={sx('color:#B7B0C2; font-size:14px;')}>
+            <a href="https://www.instagram.com/borderlesstradenetwork/" target="_blank" rel="noopener noreferrer" style={sx('color:#B7B0C2; font-size:14px;')}>
               Instagram
             </a>
-            <a href="#" style={sx('color:#B7B0C2; font-size:14px;')}>
+            <a href="https://www.linkedin.com/company/borderless-trade-network/" target="_blank" rel="noopener noreferrer" style={sx('color:#B7B0C2; font-size:14px;')}>
               LinkedIn
             </a>
-            <a href="#" style={sx('color:#B7B0C2; font-size:14px;')}>
+            <a href="https://www.youtube.com/@borderlesstradenetwork4826" target="_blank" rel="noopener noreferrer" style={sx('color:#B7B0C2; font-size:14px;')}>
               YouTube
             </a>
           </div>

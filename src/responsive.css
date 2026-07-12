@@ -113,9 +113,6 @@
 }
 
 /* ---------- Home ---------- */
-.mobile-stat-note {
-  display: none;
-}
 @media (max-width: 767px) {
   .home-hero {
     height: 558px !important;
@@ -147,14 +144,11 @@
   .home-stats-grid > div:nth-child(odd) {
     border-right: 1px solid rgba(246, 243, 236, 0.14) !important;
   }
-  .home-stats-grid > div:not(:nth-last-child(-n + 2)) {
+  .home-stats-grid > div:not(:last-child) {
     border-bottom: 1px solid rgba(246, 243, 236, 0.14) !important;
   }
   .stat-value {
     font-size: 34px !important;
-  }
-  .mobile-stat-note {
-    display: flex !important;
   }
   .home-who-grid {
     gap: 40px !important;

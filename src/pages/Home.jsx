@@ -161,11 +161,6 @@ export default function Home() {
               </div>
             </div>
           ))}
-          <div className="mobile-stat-note" style={sx('padding:40px 26px; display:flex; align-items:center;')}>
-            <p className="lbl" style={sx('color:#C9C3D2; text-transform:none; letter-spacing:.04em; font-size:12px; line-height:1.5;')}>
-              Illustrative: replace with verified data.
-            </p>
-          </div>
         </div>
       </Section>
 

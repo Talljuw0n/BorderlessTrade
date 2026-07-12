@@ -115,12 +115,12 @@ export function FooterHome() {
         </div>
         <div style={sx('display:flex; flex-direction:column; gap:12px;')}>
           <div className="lbl" style={sx('color:#476C9B;')}>
-            <a href="#" style={sx('color:#48483A;')}>
+            <a href="https://www.instagram.com/borderlesstradenetwork/" target="_blank" rel="noopener noreferrer" style={sx('color:#48483A;')}>
               Instagram
             </a>
           </div>
           <div className="lbl">
-            <a href="#" style={sx('color:#48483A;')}>
+            <a href="https://www.linkedin.com/company/borderless-trade-network/" target="_blank" rel="noopener noreferrer" style={sx('color:#48483A;')}>
               LinkedIn
             </a>
           </div>
