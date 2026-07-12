@@ -125,8 +125,8 @@ export function FooterHome() {
             </a>
           </div>
           <div className="lbl">
-            <a href="#" style={sx('color:#48483A;')}>
-              X (Twitter)
+            <a href="https://www.facebook.com/borderlesstradenetwork/" target="_blank" rel="noopener noreferrer" style={sx('color:#48483A;')}>
+              Facebook
             </a>
           </div>
         </div>
