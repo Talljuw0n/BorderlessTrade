@@ -8,44 +8,30 @@ const programs = [
   {
     name: 'West Africa SME Trade Facilitation & Market Access Programme (T2T)',
     partners: 'ECOWAS Parliament, Providus Bank, SMEDAN, GABA Marketplace Center, Duchess N. Limited, Valcetra',
-    year: '2026',
-    category: 'Trade Facilitation / SME',
   },
   {
     name: 'ECOWAS @ 25: Regional Trade Integration Partnership',
     partners: 'ECOWAS Parliament, Duchess Natural Limited',
-    year: '2026',
-    category: 'Policy / Regional Integration',
   },
   {
     name: 'AWE Cohort 2022',
     partners: 'U.S. Dept. of State AWE network',
-    year: '2022',
-    category: 'Training & Education',
   },
   {
     name: 'AWE Cohort 2021',
     partners: 'U.S. Dept. of State AWE network',
-    year: '2021',
-    category: 'Training & Education',
   },
   {
     name: 'AWE Cohort 2020',
     partners: 'U.S. Dept. of State AWE network',
-    year: '2020',
-    category: 'Training & Education',
   },
   {
     name: 'Borderless Trade Salon Series 2.0',
-    partners: 'TBC',
-    year: 'TBC',
-    category: 'Training & Education',
+    partners: 'U.S. Dept. of State AWE network',
   },
   {
     name: 'Borderless Trade Salon Series 1.0',
-    partners: 'TBC',
-    year: 'TBC',
-    category: 'Training & Education',
+    partners: 'U.S. Dept. of State AWE network',
   },
 ];
 
@@ -88,10 +74,8 @@ export default function TrackRecord() {
         <table className="programs-table" style={sx('width:100%; border-collapse:collapse; font-size:15px;')}>
           <thead>
             <tr style={sx('border-top:2px solid #0F0326; border-bottom:1px solid #C9C1B2;')}>
-              <th className="lbl" style={sx('text-align:left; padding:14px 16px 14px 0; width:34%;')}>Program</th>
-              <th className="lbl" style={sx('text-align:left; padding:14px 16px;')}>Partners</th>
-              <th className="lbl" style={sx('text-align:left; padding:14px 16px; width:9%;')}>Year</th>
-              <th className="lbl" style={sx('text-align:left; padding:14px 0 14px 16px; width:20%;')}>Category</th>
+              <th className="lbl" style={sx('text-align:left; padding:14px 16px 14px 0; width:40%;')}>Program</th>
+              <th className="lbl" style={sx('text-align:left; padding:14px 0 14px 16px;')}>Partners</th>
             </tr>
           </thead>
           <tbody style={sx('color:#3A3448;')}>
@@ -100,30 +84,13 @@ export default function TrackRecord() {
                 <td data-label="Program" style={sx("padding:18px 16px 18px 0; font-family:'Newsreader',serif; font-size:18px; color:#0F0326;")}>
                   {p.name}
                 </td>
-                <td
-                  data-label="Partners"
-                  style={sx(
-                    `padding:18px 16px; color:${p.partners === 'TBC' ? '#9A9284' : '#6B6478'};${
-                      p.partners === 'TBC' ? ' font-style:italic;' : ''
-                    }`
-                  )}
-                >
+                <td data-label="Partners" style={sx('padding:18px 0 18px 16px; color:#6B6478;')}>
                   {p.partners}
                 </td>
-                <td
-                  data-label="Year"
-                  style={sx(
-                    `padding:18px 16px; font-family:'IBM Plex Mono',monospace;${p.year === 'TBC' ? ' color:#9A9284;' : ''}`
-                  )}
-                >
-                  {p.year}
-                </td>
-                <td data-label="Category" style={sx('padding:18px 0 18px 16px; color:#476C9B; font-size:13px;')}>{p.category}</td>
               </tr>
             ))}
           </tbody>
         </table>
-        <p style={sx('font-size:13px; color:#9A9284; margin-top:18px;')}>Dates marked TBC to be confirmed.</p>
       </div>
 
       {/* IMPACT AT A GLANCE */}
