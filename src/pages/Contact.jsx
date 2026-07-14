@@ -97,8 +97,8 @@ export default function Contact() {
               <div className="lbl" style={sx('color:#8E86A0; margin-bottom:6px; font-size:10px;')}>
                 Partnerships
               </div>
-              <a href="mailto:partner@borderlesstrade.com" style={sx("color:#F6F3EC; font-family:'Newsreader',serif; font-size:20px;")}>
-                partner@borderlesstrade.com
+              <a href="mailto:contact@borderlesstrade.com" style={sx("color:#F6F3EC; font-family:'Newsreader',serif; font-size:20px;")}>
+                contact@borderlesstrade.com
               </a>
             </div>
           </div>
