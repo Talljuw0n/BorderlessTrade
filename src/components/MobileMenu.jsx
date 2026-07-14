@@ -3,10 +3,10 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { sx } from '../lib/sx';
 
 const links = [
+  { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/what-we-do', label: 'What We Do' },
   { to: '/track-record', label: 'Track Record' },
-  { to: '/women-in-trade', label: 'Women in Trade' },
   { to: '/news', label: 'News' },
   { to: '/contact', label: 'Contact' },
 ];
