@@ -97,7 +97,7 @@ export default function Home() {
         </div>
         <div
           style={sx(
-            'position:absolute; left:0; right:0; bottom:0; top:100px; pointer-events:none; background:linear-gradient(0deg, rgba(15,3,38,.72) 0%, rgba(15,3,38,.38) 50%, rgba(15,3,38,.16) 100%);'
+            'position:absolute; left:0; right:0; bottom:0; height:280px; pointer-events:none; background:linear-gradient(0deg, rgba(15,3,38,.65) 0%, rgba(15,3,38,0) 100%);'
           )}
         ></div>
         <Header overlay />
@@ -106,7 +106,7 @@ export default function Home() {
             <div
               className="lbl"
               style={sx(
-                'color:#C1B098; margin-bottom:20px; display:flex; align-items:center; gap:12px; text-shadow:0 1px 8px rgba(0,0,0,.5);'
+                'color:#C1B098; margin-bottom:20px; display:flex; align-items:center; gap:12px; text-shadow:0 1px 3px rgba(0,0,0,.9), 0 2px 12px rgba(0,0,0,.6);'
               )}
             >
               <span style={sx('width:34px; height:1px; background:#C1B098; display:inline-block;')}></span>
@@ -314,7 +314,7 @@ export default function Home() {
         <div className="rgrid-1" style={sx('color:#F6F3EC; display:grid; grid-template-columns:.9fr 1.1fr; align-items:stretch;')}>
           <div className="women-spotlight-img" style={sx('position:relative; min-height:420px; background:#0F0326;')}>
             <img
-              src="https://borderlesstrade.com/wp-content/uploads/2026/03/Borderless-Trade-1.jpeg"
+              src="/uploads/women-in-trade.png"
               alt="African Women Entrepreneurs cohort"
               style={sx(
                 'position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center top; display:block;'

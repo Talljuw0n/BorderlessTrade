@@ -79,7 +79,7 @@ const cohorts = [
 ];
 
 const gallery = [
-  'https://borderlesstrade.com/wp-content/uploads/2026/03/Borderless-Trade-1.jpeg',
+  '/uploads/women-in-trade.png',
   'https://borderlesstrade.com/wp-content/uploads/2026/03/Borderless-Trade-2.jpeg',
   'https://borderlesstrade.com/wp-content/uploads/2026/03/Borderless-Trade-3.jpeg',
   'https://borderlesstrade.com/wp-content/uploads/2026/02/8939b7_6e5eebaa85814264bb4e1cb62e405b9fmv2.avif',
@@ -91,7 +91,7 @@ export default function WomenInTrade() {
       {/* HERO + OVERLAY NAV (centered heading) */}
       <div className="women-hero" style={sx('position:relative; height:620px; overflow:hidden; background:#0F0326;')}>
         <img
-          src="https://borderlesstrade.com/wp-content/uploads/2026/03/Borderless-Trade-1.jpeg"
+          src="/uploads/women-in-trade.png"
           alt="African Women Entrepreneurs cohort"
           style={sx(
             'position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 30%;'
