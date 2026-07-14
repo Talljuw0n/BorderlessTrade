@@ -87,15 +87,7 @@ export default function Contact() {
             </div>
             <div>
               <div className="lbl" style={sx('color:#8E86A0; margin-bottom:6px; font-size:10px;')}>
-                Trade
-              </div>
-              <a href="mailto:contact@borderlesstrade.com" style={sx("color:#F6F3EC; font-family:'Newsreader',serif; font-size:20px;")}>
-                contact@borderlesstrade.com
-              </a>
-            </div>
-            <div>
-              <div className="lbl" style={sx('color:#8E86A0; margin-bottom:6px; font-size:10px;')}>
-                Partnerships
+                Trade &amp; Partnership
               </div>
               <a href="mailto:contact@borderlesstrade.com" style={sx("color:#F6F3EC; font-family:'Newsreader',serif; font-size:20px;")}>
                 contact@borderlesstrade.com
