@@ -135,16 +135,18 @@ export default function TrackRecord() {
           <table className="responsive-table" style={sx('width:100%; border-collapse:collapse; font-size:15px;')}>
             <thead>
               <tr style={sx('border-bottom:1px solid #2C2543;')}>
-                <th className="lbl" style={sx('text-align:left; padding:12px 16px 12px 0; color:#8E86A0;')}>Sector</th>
+                <th className="lbl" style={sx('text-align:left; padding:12px 16px 12px 0; color:#8E86A0;')}>Deal</th>
+                <th className="lbl" style={sx('text-align:left; padding:12px 16px; color:#8E86A0;')}>Sector</th>
                 <th className="lbl" style={sx('text-align:left; padding:12px 16px; color:#8E86A0;')}>Date</th>
                 <th className="lbl" style={sx('text-align:right; padding:12px 16px; color:#8E86A0;')}>Amount</th>
                 <th className="lbl" style={sx('text-align:left; padding:12px 0 12px 16px; color:#8E86A0;')}>Role</th>
               </tr>
             </thead>
             <tbody style={sx("color:#8E86A0; font-family:'IBM Plex Mono',monospace;")}>
-              {[0, 1, 2].map((i) => (
-                <tr key={i} style={sx(i < 2 ? 'border-bottom:1px solid #221B3A;' : '')}>
-                  <td data-label="Sector" style={sx('padding:16px 16px 16px 0;')}>[ sector ]</td>
+              {['T2T', 'Mastercard', 'Bishara Afrika'].map((name, i) => (
+                <tr key={name} style={sx(i < 2 ? 'border-bottom:1px solid #221B3A;' : '')}>
+                  <td data-label="Deal" style={sx('padding:16px 16px 16px 0; color:#F6F3EC;')}>{name}</td>
+                  <td data-label="Sector" style={sx('padding:16px;')}>[ sector ]</td>
                   <td data-label="Date" style={sx('padding:16px;')}>[ date ]</td>
                   <td data-label="Amount" style={sx('padding:16px; text-align:right;')}>[ amount ]</td>
                   <td data-label="Role" style={sx('padding:16px 0 16px 16px;')}>[ role ]</td>
@@ -153,7 +155,7 @@ export default function TrackRecord() {
             </tbody>
           </table>
           <p style={sx("font-family:'IBM Plex Mono',monospace; font-size:12px; color:#5B5470; margin-top:16px;")}>
-            PLACEHOLDER: replace with disclosed transaction data.
+            PLACEHOLDER: sector, date, amount and role to be confirmed and added.
           </p>
         </div>
       </Section>
