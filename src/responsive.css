@@ -144,7 +144,7 @@
   .home-stats-grid > div:nth-child(odd) {
     border-right: 1px solid rgba(246, 243, 236, 0.14) !important;
   }
-  .home-stats-grid > div:not(:last-child) {
+  .home-stats-grid > div:not(:nth-last-child(-n + 2)) {
     border-bottom: 1px solid rgba(246, 243, 236, 0.14) !important;
   }
   .stat-value {

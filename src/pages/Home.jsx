@@ -9,11 +9,10 @@ import Section from '../components/Section';
 import { sx } from '../lib/sx';
 
 const stats = [
-  { target: 20, suffix: '+', prefix: '', label: 'Countries engaged' },
-  { target: 50, suffix: 'M', prefix: '€', label: 'Development pipeline' },
-  { target: 7, suffix: 'K+', prefix: '', label: 'Women & youth empowered' },
-  { target: 40, suffix: '+', prefix: '', label: 'Institutional partners' },
-  { target: 32, suffix: '+', prefix: '', label: 'Projects supported' },
+  { target: 15, suffix: '+', prefix: '', label: 'Years of experience' },
+  { target: 500, suffix: 'M+', prefix: '€', label: 'Development funds structured' },
+  { target: 149, suffix: 'K+', prefix: '', label: 'Entrepreneurs reached' },
+  { target: 3, suffix: 'M+', prefix: '$', label: 'Raised for women-led SMEs' },
 ];
 
 const pillars = [
@@ -147,7 +146,7 @@ export default function Home() {
 
       {/* STATS BAR */}
       <Section background="#48483A">
-        <div className="home-stats-grid" style={sx('color:#F6F3EC; display:grid; grid-template-columns:repeat(5,1fr);')}>
+        <div className="home-stats-grid" style={sx('color:#F6F3EC; display:grid; grid-template-columns:repeat(4,1fr);')}>
           {stats.map((s, i) => (
             <div
               key={s.label}
