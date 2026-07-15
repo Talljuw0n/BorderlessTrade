@@ -80,8 +80,8 @@ const cohorts = [
 
 const gallery = [
   '/uploads/women-in-trade.png',
-  'https://borderlesstrade.com/wp-content/uploads/2026/03/Borderless-Trade-2.jpeg',
-  'https://borderlesstrade.com/wp-content/uploads/2026/03/Borderless-Trade-3.jpeg',
+  '/uploads/wit-speaking.jpeg',
+  '/uploads/wit-terrace.jpeg',
   'https://borderlesstrade.com/wp-content/uploads/2026/02/8939b7_6e5eebaa85814264bb4e1cb62e405b9fmv2.avif',
 ];
 
