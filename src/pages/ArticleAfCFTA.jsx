@@ -6,7 +6,7 @@ export default function ArticleAfCFTA() {
       breadcrumb="Africa"
       title="From Policy to Practice: Building the Operating System for the AfCFTA"
       date="October 21, 2025 · 4 min read"
-      heroImage="https://borderlesstrade.com/wp-content/uploads/2024/03/afCFTA-1410x720.webp"
+      heroImage="/uploads/policy-to-practice.jpeg"
       tags={['AfCFTA', 'Africa', 'Trade & Investment', 'Business']}
     >
       <p className="lead">

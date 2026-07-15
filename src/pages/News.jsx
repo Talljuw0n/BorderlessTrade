@@ -7,7 +7,7 @@ import { sx } from '../lib/sx';
 const articles = [
   {
     to: '/news/t2t',
-    image: 'https://borderlesstrade.com/wp-content/uploads/2026/03/image-3-819x1024.jpeg',
+    image: '/uploads/t2t.jpeg',
     tag: 'Africa',
     date: 'Mar 31, 2026',
     title: 'From Training to Transaction (T2T)',
@@ -15,7 +15,7 @@ const articles = [
   },
   {
     to: '/news/ecowas',
-    image: 'https://borderlesstrade.com/wp-content/uploads/2026/03/image-1.jpeg',
+    image: '/uploads/ecowas.jpeg',
     tag: 'Trade & Investment · Africa',
     date: 'Mar 31, 2026',
     title: 'ECOWAS @ 25: Strengthening Regional Trade Integration',
@@ -23,7 +23,7 @@ const articles = [
   },
   {
     to: '/news/afcfta',
-    image: 'https://borderlesstrade.com/wp-content/uploads/2024/03/afCFTA-1410x720.webp',
+    image: '/uploads/policy-to-practice.jpeg',
     tag: 'Africa',
     date: 'Oct 21, 2025',
     title: 'From Policy to Practice: The AfCFTA Operating System',
@@ -31,7 +31,7 @@ const articles = [
   },
   {
     to: '/news/finance',
-    image: 'https://borderlesstrade.com/wp-content/uploads/2024/03/Finance-without-fiction-1410x720.webp',
+    image: '/uploads/finance-without-friction.jpeg',
     tag: 'Africa · Trade & Investment',
     date: 'Oct 21, 2025',
     title: 'Finance Without Friction',

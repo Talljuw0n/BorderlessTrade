@@ -56,21 +56,21 @@ const insights = [
     tag: 'T2T · Africa',
     title: "From Training to Transaction (T2T): partnerships driving Africa's trade execution",
     body: 'The West Africa SME Trade Facilitation & Market Access Programme with the ECOWAS Parliament.',
-    image: 'https://borderlesstrade.com/wp-content/uploads/2026/03/image-3-819x1024.jpeg',
+    image: '/uploads/t2t.jpeg',
   },
   {
     to: '/news/afcfta',
     tag: 'AfCFTA',
     title: 'From Policy to Practice: building the operating system for the AfCFTA',
     body: 'A single market for 1.4 billion people: turning the vision into working infrastructure.',
-    image: 'https://borderlesstrade.com/wp-content/uploads/2024/03/afCFTA-1410x720.webp',
+    image: '/uploads/policy-to-practice.jpeg',
   },
   {
     to: '/news/finance',
     tag: 'Trade & Investment',
     title: 'Finance Without Friction',
     body: 'From borders to bridges: how new trade ecosystems empower African entrepreneurs.',
-    image: 'https://borderlesstrade.com/wp-content/uploads/2024/03/Finance-without-fiction-1410x720.webp',
+    image: '/uploads/finance-without-friction.jpeg',
   },
 ];
 

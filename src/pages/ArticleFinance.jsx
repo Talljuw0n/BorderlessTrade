@@ -6,7 +6,7 @@ export default function ArticleFinance() {
       breadcrumb="Africa · Trade & Investment"
       title="Finance Without Friction"
       date="October 21, 2025 · 3 min read"
-      heroImage="https://borderlesstrade.com/wp-content/uploads/2024/03/Finance-without-fiction-1410x720.webp"
+      heroImage="/uploads/finance-without-friction.jpeg"
       tags={['AfCFTA', 'Africa', 'Finance', 'Trade & Investment']}
     >
       <p className="lead">

@@ -6,7 +6,7 @@ export default function ArticleECOWAS() {
       breadcrumb="Trade & Investment · Africa"
       title="ECOWAS @ 25: ECOWAS Parliament, Private Sector Strengthen Push for Regional Trade Integration"
       date="March 31, 2026 · 1 min read"
-      heroImage="https://borderlesstrade.com/wp-content/uploads/2026/03/image-1.jpeg"
+      heroImage="/uploads/ecowas.jpeg"
       tags={['Trade & Investment', 'Africa', 'Borderless Trade']}
     >
       <p className="lead">

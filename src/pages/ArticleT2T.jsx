@@ -6,7 +6,7 @@ export default function ArticleT2T() {
       breadcrumb="Africa"
       title="From Training to Transaction (T2T): Strategic Partnerships Driving Africa's Trade Execution Agenda"
       date="March 31, 2026 · 2 min read"
-      heroImage="https://borderlesstrade.com/wp-content/uploads/2026/03/image-3-819x1024.jpeg"
+      heroImage="/uploads/t2t.jpeg"
       tags={['Africa', 'Borderless Trade', 'Business', 'Finance']}
     >
       <p className="lead">T2T Programme positions African SMEs for structured participation in global markets.</p>
