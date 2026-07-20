@@ -34,12 +34,10 @@ const pillars = [
 ];
 
 const transactions = [
-  { sector: 'Agri-Value Chains', year: '2025', value: '€18.5M', role: 'Lead Advisor', instrument: 'Blended Finance Facility' },
-  { sector: 'Infrastructure & Logistics', year: '2024', value: '€42.0M', role: 'Bookrunner', instrument: 'Project Bond' },
-  { sector: 'Manufacturing', year: '2024', value: '€12.3M', role: 'Issuing House', instrument: 'Structured Debt' },
-  { sector: 'Energy', year: '2023', value: '€65.0M', role: 'Financial Advisor', instrument: 'PPP / Concession' },
-  { sector: 'Healthcare', year: '2023', value: '€9.8M', role: 'Lead Arranger', instrument: 'Guarantee-Backed Loan' },
-  { sector: 'Export MSMEs', year: '2022', value: '€5.2M', role: 'Facilitation Partner', instrument: 'Trade Finance Line' },
+  { sector: 'Agri-Value Chains', year: '2025', role: 'Lead Advisor', instrument: 'Blended Finance Facility' },
+  { sector: 'Infrastructure & Logistics', year: '2024', role: 'Advisor', instrument: 'Project Bond' },
+  { sector: 'Manufacturing', year: '2024', role: 'Advisor', instrument: 'Structured Debt' },
+  { sector: 'Export MSMEs', year: '2022', role: 'Facilitation Partner', instrument: 'Trade Finance Line' },
 ];
 
 const audiences = [
@@ -256,7 +254,6 @@ export default function Home() {
             <tr style={sx('border-top:2px solid #0F0326; border-bottom:1px solid #C9C1B2;')}>
               <th className="lbl" style={sx('text-align:left; padding:14px 16px 14px 0;')}>Sector</th>
               <th className="lbl" style={sx('text-align:left; padding:14px 16px;')}>Year</th>
-              <th className="lbl" style={sx('text-align:right; padding:14px 16px;')}>Value</th>
               <th className="lbl" style={sx('text-align:left; padding:14px 16px;')}>Role</th>
               <th className="lbl" style={sx('text-align:left; padding:14px 0 14px 16px;')}>Instrument</th>
             </tr>
@@ -269,9 +266,6 @@ export default function Home() {
               >
                 <td data-label="Sector" style={sx('padding:17px 16px 17px 0; font-weight:600; color:#0F0326;')}>{t.sector}</td>
                 <td data-label="Year" style={sx('padding:17px 16px;')}>{t.year}</td>
-                <td data-label="Value" style={sx("padding:17px 16px; text-align:right; font-family:'IBM Plex Mono',monospace;")}>
-                  {t.value}
-                </td>
                 <td data-label="Role" style={sx('padding:17px 16px;')}>{t.role}</td>
                 <td data-label="Instrument" style={sx('padding:17px 0 17px 16px; color:#6B6478;')}>{t.instrument}</td>
               </tr>
